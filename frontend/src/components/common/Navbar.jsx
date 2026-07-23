@@ -17,7 +17,7 @@ function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [farmerMenu, setFarmerMenu] = useState(false);
-
+ 
   const token = localStorage.getItem("token");
 
   const handleLogout = () => {
@@ -104,6 +104,7 @@ function Navbar() {
 
                   <Link
                     to="/add-crop"
+                     onClick={() => setFarmerMenu(false)}
                     className="block px-4 py-3 hover:bg-gray-100"
                   >
                     Add Crop
@@ -111,13 +112,14 @@ function Navbar() {
 
                   <Link
                     to="/my-crops"
+                     onClick={() => setFarmerMenu(false)}
                     className="block px-4 py-3 hover:bg-gray-100"
                   >
                     My Crops
                   </Link>
 
                   <button
-                    onClick={handleLogout}
+                   onClick={() => {setFarmerMenu(false); handleLogout(); }}
                     className="block w-full text-left px-4 py-3 hover:bg-red-100 text-red-600"
                   >
                     Logout

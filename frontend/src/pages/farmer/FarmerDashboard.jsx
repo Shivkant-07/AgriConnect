@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 function FarmerDashboard() {
   const navigate = useNavigate();
+  
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -39,6 +40,7 @@ function FarmerDashboard() {
 
         <Link
           to="/add-crop"
+          
           className="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition"
         >
           <h2 className="text-2xl font-bold text-green-700">
@@ -52,6 +54,7 @@ function FarmerDashboard() {
 
         <Link
           to="/my-crops"
+           
           className="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition"
         >
           <h2 className="text-2xl font-bold text-blue-700">
