@@ -4,7 +4,7 @@ import Home from "./pages/common/Home";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import AdminDashboard from "./pages/admin/AdminDashboard";
-import NotFound from "./pages/common/NotFound";
+import NotFound from "./pages/common/Notfound";
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import AddCrop from "./pages/farmer/AddCrop";
@@ -15,7 +15,7 @@ import Marketplace from "./pages/marketplace/Marketplace";
 import MyRequests from "./pages/MyRequests/MyRequests";
 import News from "./pages/News/News";
 import Schemes from "./pages/Schemes/Schemes";
-import Profile from "./pages/Profile/Profile";
+import Profile from "./pages/profile/Profile";
 
 function App() {
   return (
